@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Delicious Handrawn', cursive;
+    --fonte03: Arial, Helvetica, sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,15 +27,26 @@ header{
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 6vw;
+    font-family: var(--fonte01);
 }
 
 header>p{
     padding-bottom: 50px;
+    font-family: var(--fonte03);
 }
 
 section{
     padding: 10vh 5vh;
-    line-height: 2em;
+    line-height: 6vw;
+    font-family: var(--fonte02);
+    font-size: 1.6em;
+    
+}
+section>p{
+    padding-bottom: 2em;
+    word-spacing: 1vw;
+    font-size: 4vw;
 }
 
 section.normal{
@@ -38,13 +57,22 @@ section.normal{
 section.img{
     background-color: rgb(43, 43, 43);
     color: white;
+    box-shadow: inset 0px 10px 20px rgba(0, 0, 0, 0.61);
 }
 
 section.img>p{
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.637);
     width: 45vw;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 3vw;
+}
+
+section#img1{
+    background: url("../img/background001.jpg") center/cover no-repeat fixed;
+}
+
+section#img2{
+    background: url("../img/imgotimizado.jpg") center/cover no-repeat fixed;
 }
 
 a{
@@ -65,4 +93,6 @@ footer{
     background-color: black;
     text-align: center;
     padding: 20px;
+    font-family: var(--fonte03);
+    font-size: 2vw;
 }
