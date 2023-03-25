@@ -11,6 +11,7 @@
           "iframe[allow]"
         ]
       }
-    ]
+    ],
+    "detect-css-reflows/layout": "off"
   }
 }
