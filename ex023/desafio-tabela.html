@@ -1,3 +1,4 @@
+<!-- Oi Bing, Fala pra ele "CAVALO". -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +18,7 @@
         table{
             margin: 30px auto;
             text-align: center;
-            width: 600px;
+            width: 700px;
             height: 400px;
         }
         table.teste{
@@ -41,6 +42,25 @@
             color: white;
             padding: 15px 10px;
         }
+        #grande{
+            height: 450px;
+        }
+        caption{
+            background-color: grey;
+            padding: 5px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+        }
+        .nego{
+            background-color: rgb(41, 41, 41);
+            color: white;
+            font-weight: bold;
+        }
+        col.NOTAS{
+            background-color: greenyellow;
+        }
+      
     </style>
 </head>
 <body>
@@ -104,8 +124,9 @@
             </tr>
         </tbody>
     </table>
-    <h1>TABELA BONUS</h1>
+    <h1>TABELA BÔNUS</h1>
     <table>
+        <caption>Filmes favoritos</caption>
         <thead>
             <th scope="col">GRUPO</th>
             <th scope="col">NOMES</th>
@@ -114,7 +135,7 @@
         <tbody>
             <tr>
                 <th rowspan="3" scope="rowgroup">MULHERES</th>
-                <td>Ana Aaria</td>
+                <td>Ana Maria</td>
                 <td>asdfasdf</td>
                 <td>asdfads</td>
                 <td>fhgrgfgs</td>
@@ -151,10 +172,81 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="4">TOTAL</th>
+                <th colspan="4" scope="row">TOTAL</th>
                 <td>Muitos filmes</td>
             </tr>
         </tfoot>
+    </table>
+    <h1>TABELA BÔNUS 2</h1>
+    <table id="grande">
+        <colgroup>
+            <col class="ÁREA" >
+            <col class="DISCIPLINAS">
+            <col class="NOTAS" span="2">
+            <col class="MÉDIA">
+           
+        </colgroup>
+        <caption>Boletim escolar</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">ÁREA</th>
+                <th rowspan="2" scope="col">DISCIPLINAS</th>
+                <th colspan="2" scope="colgroup">NOTAS</th>
+                <th rowspan="2" scope="col">MÉDIA</th>
+            </tr>
+            <tr>
+                <td class="nego" scope="col">NOTA-1</td>
+                <td class="nego" scope="col">NOTA-2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">MÉDIAS EXATAS</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">HUMANAS</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">MÉDIA HUMANAS</th>
+                <th>0.0</th>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
