@@ -13,25 +13,52 @@
         }
         div{
             margin: 20px;
-            background-color: aqua;
+            background-color: rgb(206, 206, 206);
             height: 70vh;
+            border-radius: 20px;
+            transition-duration: 1s;
         }
         div>iframe{
             width: 100%;
             height: 100%;
         }
-        p, h1{
+        p, h1, h2{
             font-size: 1.5em;
             padding-bottom: 10px;
             margin: 20px;
+        }
+        a{
+            
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        a:hover{
+            color: rgb(112, 112, 112);
+            text-decoration: underline
         }
     </style>
 </head>
 <body>
     <h1>testando iframe</h1>
     <p>acessando um site para estudar</p>
-    <div><iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe></div>
+    <div><iframe src="../ex023/desafio-tabela.html" frameborder="0"></iframe></div>
     <h1>enchendo linguiça</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod doloremque illum ad voluptatibus qui consequatur aspernatur quaerat, soluta, veniam nisi minus placeat hic? Aperiam molestiae sed incidunt, consectetur fugit cupiditate quos ipsam eius fugiat beatae velit blanditiis esse architecto tenetur officia eum suscipit veniam. Est iure quod sed praesentium ipsa amet voluptates exercitationem? Molestiae error quia, voluptas quam molestias illum culpa sequi ullam fuga nemo nisi, vero placeat, reprehenderit adipisci minima dicta delectus alias. Recusandae, qui obcaecati iure cumque exercitationem sapiente laborum laboriosam hic quibusdam quae laudantium quidem deserunt magni sint ab, iusto autem labore ad ducimus! Temporibus, reprehenderit.</p>
+    <p>fim</p>
+
+
+    <h1>PARTE 2 DO IFRAME</h1>
+    <H2>Escolha o site para abrir na janela abaixo</H2>
+    <ul>
+        <li><a target="iframe" href="../projeto-cordel/index.html"><p>Cordel</p></a></li>
+        <li><a target="iframe" href="../ex022/fundo002.html"><p>Aula de background</p></a></li>
+        <li><a target="iframe" href="../desafio10/index.html"><p>Desafio 10</p></a></li>
+    </ul>
+
+    <div>
+        <iframe name="iframe" srcdoc="<h1>Esta janela está vaz ia, escolha uma das opções acima.</h1>" frameborder="0"></iframe>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quos provident, at ipsa esse tempore eveniet aliquid, natus magnam blanditiis ut rem tempora neque sunt magni officiis consequuntur pariatur aperiam nesciunt recusandae! Porro ipsum quisquam placeat sed voluptatibus voluptatum facilis quam dolorum. Ab iste cupiditate unde alias, dolore veniam. Aliquam quas ex enim exercitationem impedit similique ab molestiae iste voluptas.</p>
 </body>
 </html>
