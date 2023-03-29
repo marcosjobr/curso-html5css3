@@ -54,7 +54,7 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iuser">Qual seu nome:</label>
-            <input type="text" name="user" id="iuser" minlength="5" size="10" placeholder="Ex: João Silva" autocomplete="username">
+            <input type="text" name="user" id="iuser" minlength="5" size="10" placeholder="Ex: João Silva" autocomplete="name">
         </p>
         <p>
             <label for="imedia">Qual sua média:</label>
@@ -75,7 +75,58 @@
         <input type="submit" value="enviar">
         <input type="reset" value="limpar">
     </form>
+    <h1>Formulário 4</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
 
-    
+    <h1>Formulário 5</h1>
+    <form action="cadastro.php">
+        <fieldset aria-required="true">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexom" value="m" checked>
+            <label for="isexom">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isexof" value="f">
+            <label for="isexof">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte favorito</legend>
+
+            <input type="checkbox" name="volei" id="ivolei">
+            <label for="ivolei">Vôlei</label>
+            <br>
+            <input type="checkbox" name="xadrez" id="ixadrez">
+            <label for="ixadrez">Xadrez</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h1>formulário 6</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#5000ff">
+        </p>
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
