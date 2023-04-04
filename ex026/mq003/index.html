@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @charset "UTF-8";
+
+        :root{
+            --cor01:rgb(225, 205, 255);
+            --cor02:rgb(192, 153, 255);
+            --cor03:rgb(117, 31, 255);
+            --cor04:rgb(57, 0, 150);
+
+            --fonte01: "Russo One";
+            --fonte02: arial, sans-serif;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-weight: normal;
+        }
+
+        body, html{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1, h2{
+            font-family: var(--fonte01);
+            font-weight: normal;
+            color: var(--cor04);
+        }
+
+        p{
+            font-family: var(--fonte02);
+            font-weight: normal;
+            line-height: 1.2em;
+            padding-bottom: 5px;
+        }
+
+        @media screen and (orientation: portrait) {
+            body{
+                background: blue url(../img/cev-portrait.jpg) bottom center/cover no-repeat fixed;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body{
+                background: blue url(../img/cev-landscape.jpg) bottom center/cover no-repeat fixed;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+     </header>
+     <main>
+        <article>
+            <h2>Estou aprendendo Media Queries!</h2>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, fugiat. Harum in omnis vitae, quasi magnam deserunt voluptatibus nulla aliquid minus sit repellat et vel laudantium accusamus voluptates quam deleniti atque dolore cupiditate eum explicabo corporis! Ratione iste, vitae recusandae facere explicabo ut tempore voluptatem blanditiis at laborum dolores soluta.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum eveniet maiores magnam iure minima a perferendis. Nihil, architecto perferendis blanditiis eaque eos id optio quod saepe eum autem molestias sapiente.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque delectus veritatis laborum necessitatibus itaque obcaecati quidem voluptatem at, eaque est sunt modi ipsam aliquid totam quas mollitia odio unde rerum ex illo. Recusandae distinctio architecto quidem unde similique vitae molestiae.</p>
+        </article>
+     </main>
+</body>
+</html>
