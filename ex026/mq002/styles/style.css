@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root{
+    --cor01:rgb(225, 205, 255);
+    --cor02:rgb(192, 153, 255);
+    --cor03:rgb(117, 31, 255);
+    --cor04:rgb(57, 0, 150);
+
+    --fonte01: "Russo One";
+    --fonte02: arial, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2{
+    font-family: var(--fonte01);
+    font-weight: normal;
+    color: var(--cor04);
+}
+
+p{
+    font-family: var(--fonte02);
+    font-weight: normal;
+    line-height: 1.2em;
+    padding-bottom: 5px;
+}
