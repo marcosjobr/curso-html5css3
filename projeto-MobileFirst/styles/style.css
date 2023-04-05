@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "russo one";
+    font-weight: normal;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+body{
+    background:black url(img/back-phone.jpg) center/cover no-repeat fixed;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.692);
+    margin: 30px auto;
+    width: 450px;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+img#phone, img#tablet, img#pc, img#tv, img#print{
+    display: none;
+}

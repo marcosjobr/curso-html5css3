@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px){
+    img#phone{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 922px){
+    body{
+        background: black url(img/back-tablet.jpg) center/cover no-repeat fixed;
+    }
+    img#tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 923px) and (max-width: 1200px){
+    body{
+        background: black url(img/back-pc.jpg) center/cover no-repeat fixed;
+    }
+    img#pc{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    body{
+        background: black url(img/back-tv.jpg) center/cover no-repeat fixed;
+    }
+    img#tv{
+        display: block;
+    }
+}
+
+@media print{
+    body{
+        background: none;
+    }
+    main{
+        border: 2px solid rgb(78, 78, 78);
+        box-shadow: none;
+    }
+    main::after{
+        content: "Esta versão para impreção foi feita  com MediaQuery.";
+    }
+    img#print{
+        display: block;
+    }
+}
