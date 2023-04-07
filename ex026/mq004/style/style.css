@@ -16,35 +16,145 @@
     padding: 0px;
 }
 
-header{
-    background-color: var(--cor04);
-    padding: 20px 20px 10px 20px;
+html{
+    scroll-behavior: smooth;
 }
 
-header h1{
+body{
+    background-color: var(--cor01);
+}
+
+/* inicio menu */
+
+header{
+    background-color: var(--cor04);
+    padding: 15px 0px;
+}
+
+header div#icone{
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+header>div>img{
+    width: 150px;
+}
+
+menu{
+    display: none;
+}
+
+menu li{
+    list-style-type: none;
+}
+
+menu>ul>li>a{
+    display: block;
+    width: 90vw;
+    border: 1px solid var(--cor05);
+    color: var(--cor01);
+    background-color: var(--cor04);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 3px auto;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--fonte01);
+}
+
+menu>ul>li>a:hover{
+    background-color: var(--cor02);
+    color: var(--cor05);
+    font-weight: bold;
+    border-radius: 15px;
+    transition-duration: .5s;
+}
+
+menu>ul>li>a:not(:hover){
+    transition-duration: .5s;
+}
+
+
+/* final menu */
+
+/* inicio */
+
+section.inicio{
+    background: var(--cor01) url(img/bghero.jpg) bottom center/cover no-repeat fixed;
+    height: 95vh;
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.904);
+    padding: 20px;
+}
+
+div#conteudocentro{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+section.inicio h2{
     text-align: center;
     font-family: var(--fonte02);
     font-weight: normal;
-    color: white;
+    color: var(--cor01);
+    font-size: 9vw;
+    line-height: 1em;
+}
+
+section.inicio p{
+    text-align: center;
+    font-family: var(--fonte01);
+    color: var(--cor01);
+    margin-top: 20px;
+}
+
+/* fim inicio */
+
+/* main */
+
+main>section{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.452);
+    background-color: white;
+}
+
+main h2{
+    color: var(--cor05);
+    font-family: var(--fonte02);
+    font-weight: normal;
+    margin: 10px 0px 15px 0px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+main h3{
+    font-family: var(--fonte01);
+    color: var(--cor04);
+    margin-bottom: 10px;
+}
+
+main p{
+    font-family: var(--fonte01);
+    color: var(--cor05);
+    line-height: 1.3em;
+    text-indent: 35px;
     margin-bottom: 15px;
 }
 
-header nav{
-
-    padding: 5px 10px;
+video#ivideo{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-header li{
-    list-style-type: none;
-    margin: 2px 0px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    padding: 5px;
-}
-
-header a, header li{
-    text-decoration: none;
-    text-align: center;
+footer{
+    background-color: black;
     color: white;
     font-family: var(--fonte01);
+    text-align: center;
+    padding: 15px 0px;
 }
