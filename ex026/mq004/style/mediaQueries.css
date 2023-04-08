@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    menu{
+        display: block;
+        text-align: center;
+    }
+    
+    menu>ul>li{
+        display: inline-block;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    menu>ul>li>a{
+        width: 70px;
+        padding: 10px 30px;
+        font-size: 1.1em;
+        margin: 0px;
+
+    }
+
+    section.inicio h2{
+        font-size: 6vw;
+    }
+
+    main>section{
+        width: 650px;
+        margin: 20px auto;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    section.inicio h2{
+        font-size: 4vw;
+    }
+}
