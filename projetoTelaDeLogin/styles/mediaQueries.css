@@ -23,10 +23,25 @@
     }
 
     section#login>div#img{
-        width:45%
+        float: right;
+        width:50%
     }
 
     section#login>div#formulario{
-        width: 55%;
+        float: left;
+        width: 50%;
+        padding: 30px;
+    }
+
+    section#login>div#formulario>form>p{
+       font-size: 1.2em;
+    }
+
+    section#login>div#formulario>h1{
+        font-size: 1.5em;
+    }
+
+    .bt{
+        font-size: 1.3em;
     }
 }
