@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+
+            </div>
+            <div id="formulario">
+                <h1>Faça login para continuar</h1>
+                <form action="login.php" method="post">
+                    <p>
+                        <label for="iusuario">Usuário:</label>
+                        <input type="user" name="usuario" id="iusuario" autocomplete="username" required>
+                    </p>
+                    <p>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required>
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="limpar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
