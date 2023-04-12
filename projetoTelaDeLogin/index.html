@@ -17,17 +17,19 @@
             </div>
             <div id="formulario">
                 <h1>Faça login para continuar:</h1>
+                <p>Olá, bem vindo(a) de volta!<br>
+                Faça login para acessar nosso conteúdo e configurar sua conta.</p>
                 <form action="login.php" method="post">
-                    <p>
+                    <div class="campo">
                         <label for="iusuario"><i class="material-icons">account_circle</i></label>
                         <input type="email" name="usuario" id="iusuario" autocomplete="email" required>
-                    </p>
-                    <p>
+                    </div>
+                    <div class="campo">
                         <label for="isenha"><i class="material-icons">lock</i></label>
                         <input type="password" name="senha" id="isenha" autocomplete="current-password" required>
-                    </p>
-                    <input class="bt" type="submit" value="Enviar">
-                    <input class="bt" type="reset" value="Limpar">
+                    </div>
+                    <input class="bt" type="submit" value="Entrar">
+                    <input class="bt" type="reset" value="Preencher novamente">
                 </form>
             </div>
         </section>

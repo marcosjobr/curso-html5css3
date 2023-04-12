@@ -46,14 +46,60 @@ section#login{
     padding: 15px;
 }
 
-.bt{
-    padding: 2px 10px;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.308);
-    border-radius: 50px;
-}
-
 #formulario>h1{
     line-height: 1.1em;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    margin: 10px 0px;
+}
+
+section#login>div#formulario>p{
+    font-size: .9em;
+    line-height: 1.1em;
+    padding-bottom: 10px;
+
+}
+
+div.campo{
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+div.campo i{
+    width: 40px;
+    padding: 5px 0px;
+    font-size: 2em;
+}
+
+div.campo>input{
+    background-color: rgba(255, 255, 255, 0.555);
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 10px;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 4px 8px;
+    transform: translateY(-10px)
+}
+
+div.campo>input:focus{
+    background-color: rgba(255, 255, 255, 0.829);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.377);
+    transition: background-color .5s ease, box-shadow .5s ease;
+}
+
+.bt{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 7px 0px;
+    padding: 5px 0px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 50px;
+}
+.bt:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.377);
+    transition: background-color .5s ease, box-shadow .5s ease;
 }
